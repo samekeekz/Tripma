@@ -1,0 +1,274 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+*
+    box-sizing: border-box
+
+
+body
+    font-family: 'Nunito Sans'
+    background-color: white
+
+.bold-grey
+    color: #6E7491
+    font-size: 18px
+    font-weight: 600
+
+.light-grey
+    color: #7C8DB0
+    font-size: 16px
+    font-weight: 400
+
+
+
+.container
+    width: 1440px
+    padding: 40px 64px
+
+
+
+.header
+    width: 1440px
+    height: 796px
+
+
+.nav
+    padding: 8px 24px
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    &__menu 
+        display: flex
+        justify-content: end
+        align-items: center
+        padding: 16px
+        ul
+            display: flex
+            column-gap: 36px
+            margin-right: 26px
+            li
+                font-size: 16px
+                font-weight: 400
+            a
+                padding: 10px
+                color: #7C8DB0
+                text-decoration: none
+                &:hover
+                    color: #605DEC
+    &__logo
+        padding: 12px
+
+
+.active
+    color: #605DEC
+
+
+.primary-btn
+    padding: 13px 20px
+    border: none
+    border-radius: 4px
+    background-color: #605DEC
+    color: white
+    cursor: pointer
+    &:hover
+        background-color: #3330bd
+
+
+
+
+.background
+    text-align: center
+    width: 1440px
+    height: 700px
+    background: url('../icons/World Map.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+        max-width: 756px
+        font-size: 96px
+        font-weight: 800
+        text-align: center
+        background-image: url('../icons/Group 8.svg')
+        background-clip: text
+        -webkit-text-fill-color: transparent
+        margin: 0
+        padding-bottom: 60px
+
+
+.colorful-text
+    color: #605DEC
+
+.colorful-text-2
+    color: #5CD6C0
+
+.text-with-button
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 24px
+    a
+        display: flex
+        align-items: center
+        text-decoration: none
+        font-size: 24px
+        color: #A1B0CC
+        &:hover
+            color: #605DEC
+
+.text
+    color: #6E7491
+    font-size: 24px
+    font-weight: 700
+
+
+
+.flex-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+
+
+.flex-item
+    background-color: white
+    border-radius: 12px
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+    cursor: pointer
+    
+    img
+        border-radius: 12px 12px 0 0
+    &__info
+        padding: 16px 24px
+
+
+.price
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 4px
+
+        
+.numbers
+    color: #7C8DB0
+    font-size: 18px
+    font-weight: 600
+
+
+.info-2
+    padding: 16px 24px
+    width: 410px
+    p
+        color: #7C8DB0
+        font-size: 16px
+        font-weight: 400
+        padding-top: 4px
+        line-height: 21px
+
+.hotels-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 40px 0
+
+
+.reviews
+    text-align: center
+    margin-bottom: 40px
+
+    &__headtext
+        color: #6E7491
+        font-size: 24px
+        font-weight: 700
+
+    &__box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 24px
+
+        &__item
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            column-gap: 16px
+            text-align: left
+            padding: 16px
+    
+    &__text
+        width: 314px
+        font-size: 18px
+        line-height: 24.5px
+
+        h4
+            color: #6E7491
+            font-weight: 600
+        p
+            color: #27273F
+            font-weight: 400
+
+    &__location
+        color: #6E7491
+
+    &__stars
+        padding-top: 8px 
+        padding-bottom: 12px
+
+            
+
+.opener
+    cursor: pointer
+
+
+
+.footer
+
+    &__container
+        margin: 0 auto
+        padding: 60px 120px 24px 120px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+    &__item
+        padding: 16px 16px 16px 0
+
+        p
+            padding: 4px           
+            color: #6E7491
+            font-size: 18px
+            text-decoration: none
+            font-weight: 700
+            margin-bottom: 12px
+
+        a
+            color: #7C8DB0
+            font-size: 16px
+            text-decoration: none
+            font-weight: 400
+            &:hover
+                color: #605DEC
+
+        ul
+            display: flex
+            flex-direction: column
+            row-gap: 8px                
+        li
+            padding: 4px
+
+        img
+            width: 135px
+            height: 40px
+
+
+.pre-last
+    margin: 28px 0 12px 0
+            
