@@ -3,7 +3,7 @@
 
 *
     box-sizing: border-box
-
+    scroll-behavior: smooth
 
 body
     font-family: 'Nunito Sans'
@@ -21,7 +21,7 @@ body
 
 
 
-.container
+.container-r
     width: 1440px
     padding: 40px 64px
 
@@ -40,7 +40,7 @@ body
     justify-content: space-between
     align-items: center
 
-    &__menu 
+    &__menu
         display: flex
         justify-content: end
         align-items: center
@@ -101,8 +101,8 @@ body
         background-clip: text
         -webkit-text-fill-color: transparent
         margin: 0
-        padding-bottom: 60px
-
+        padding-bottom: 80px
+        margin-top: -121px
 
 .colorful-text
     color: #605DEC
@@ -121,6 +121,7 @@ body
         text-decoration: none
         font-size: 24px
         color: #A1B0CC
+        cursor: pointer
         &:hover
             color: #605DEC
 
@@ -143,11 +144,16 @@ body
     border-radius: 12px
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
     cursor: pointer
-    
+    transition: all 0.2s ease-in
+
     img
         border-radius: 12px 12px 0 0
     &__info
         padding: 16px 24px
+
+    &:hover
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
 
 
 .price
@@ -156,7 +162,7 @@ body
     justify-content: space-between
     margin-bottom: 4px
 
-        
+
 .numbers
     color: #7C8DB0
     font-size: 18px
@@ -202,7 +208,7 @@ body
             column-gap: 16px
             text-align: left
             padding: 16px
-    
+
     &__text
         width: 314px
         font-size: 18px
@@ -219,10 +225,10 @@ body
         color: #6E7491
 
     &__stars
-        padding-top: 8px 
+        padding-top: 8px
         padding-bottom: 12px
 
-            
+
 
 .opener
     cursor: pointer
@@ -242,7 +248,7 @@ body
         padding: 16px 16px 16px 0
 
         p
-            padding: 4px           
+            padding: 4px
             color: #6E7491
             font-size: 18px
             text-decoration: none
@@ -260,7 +266,7 @@ body
         ul
             display: flex
             flex-direction: column
-            row-gap: 8px                
+            row-gap: 8px
         li
             padding: 4px
 
@@ -271,4 +277,154 @@ body
 
 .pre-last
     margin: 28px 0 12px 0
-            
+
+
+
+
+form
+    width: 1200px
+    height: 48px
+    display: flex
+    justify-content: stretch
+    align-items: center
+    border-radius: 4px
+    border: 1px solid var(--grey-200, #CBD4E6)
+    background: #FFF
+    box-shadow: 0px 12px 24px 0px rgba(27, 59, 119, 0.05), 0px 24px 60px 0px rgba(6, 47, 125, 0.05), 0px 2px 4px 0px rgba(7, 4, 146, 0.10)
+
+    button
+        width: 93px
+        height: 48px
+
+
+
+input[type='text']
+    width: 325px
+    height: 48px
+    padding: 8px 12px 8px 52px
+    font-size: 18px
+    border: 1px solid var(--grey-200, #CBD4E6)
+    background-image: url(../icons/departure.svg)
+    background-position-x: 12px
+    background-position-y: center
+    background-repeat: no-repeat
+    color: #7C8DB0
+
+    &:placeholder-shown
+        color: rgba(124, 141, 176, 1)
+        font-size: 18px
+        font-weight: 400
+
+
+#datepicker
+    width: 235px
+    height: 48px
+    padding: 8px 12px 8px 52px
+    border: 1px solid var(--grey-200, #CBD4E6)
+    font-size: 18px
+    font-weight: 400
+    background-image: url('../icons/calendar with dates.svg')
+    background-position-x: 12px
+    background-position-y: center
+    background-repeat: no-repeat
+    color: #7C8DB0
+    &:placeholder-shown
+        color: rgba(124, 141, 176, 1)
+        font-size: 18px
+        font-weight: 400
+
+    &:focus
+        border: 2px solid #605DEC
+        border-radius: 4px
+
+
+
+input[type='select']
+    width: 100%
+    height: 48px
+    padding: 8px 12px 8px 52px
+    border: 1px solid var(--grey-200, #CBD4E6)
+    border-right-width: 0
+    background-image: url('../icons/person solid.svg')
+    background-position-x: 12px
+    background-position-y: center
+    background-repeat: no-repeat
+    color: rgba(124, 141, 176, 1)
+    font-size: 18px
+    font-weight: 400
+    color: #7C8DB0
+
+    &:placeholder
+        color: rgba(124, 141, 176, 1)
+        font-size: 18px
+        font-weight: 400
+
+
+#location2
+    background-image: url('../icons/arrival.svg')
+    background-position-x: 12px
+    background-position-y: center
+    background-repeat: no-repeat
+
+
+
+.guests
+    display: inline-block
+    position: relative
+
+.wrapper
+    display: none
+    flex-direction: column
+    row-gap: 8px
+    position: absolute
+    background-color: #FFF
+    top: 52px
+    left: 25px
+    color: white
+    padding: 16px
+    border: 1px solid #CBD4E6
+    border-radius: 8px
+
+.show
+    display: flex
+
+.row
+    display: flex
+    align-items: center
+    column-gap: 8px
+    color: #6E7491
+
+    span
+        font-size: 18px
+
+    label
+        margin-right: 40px
+
+
+.box
+    width: 112px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+
+
+
+
+.quantity-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    border-radius: 4px
+    border: none
+    background-color: #FAFAFA
+
+
+
+.btn
+    background-color: transparent
+    border: none
+    color: #6E7491
